@@ -1,1 +1,22 @@
+# 🚀 คู่มือการติดตั้ง React.js รูปแบบต่างๆ (React Installation Guide)
 
+ก่อนเริ่มต้นการติดตั้งในรูปแบบที่ใช้ Build tools (Vite, Next.js, CRA) **ต้องติดตั้ง [Node.js](https://nodejs.org/) ในเครื่องก่อนเสมอ** เพื่อให้สามารถใช้งานคำสั่ง `npm` หรือ `npx` ได้
+
+---
+
+## 1. ติดตั้งผ่าน Vite (แนะนำสำหรับโปรเจกต์ทั่วไป / มือใหม่)
+Vite เป็นเครื่องมือที่ทำงานได้เร็วมาก เบา และเป็นที่นิยมที่สุดในการทำ Single-Page Application (SPA) ในปัจจุบัน
+
+**คำสั่งติดตั้ง:**
+```bash
+# 1. สร้างโปรเจกต์ใหม่ (เปลี่ยน my-react-app เป็นชื่อโปรเจกต์ที่ต้องการ)
+npm create vite@latest my-react-app -- --template react
+
+# 2. เข้าไปในโฟลเดอร์โปรเจกต์
+cd my-react-app
+
+# 3. ติดตั้ง Dependencies
+npm install
+
+# 4. รันเซิร์ฟเวอร์จำลองเพื่อดูผลลัพธ์
+npm run dev
