@@ -20,3 +20,55 @@ npm install
 
 # 4. รันเซิร์ฟเวอร์จำลองเพื่อดูผลลัพธ์
 npm run dev
+
+2. ติดตั้งผ่าน Next.js (🏢 แนะนำสำหรับโปรเจกต์สเกลใหญ่ / ต้องการ SEO)
+Next.js เป็น React Framework แบบ Full-stack ที่มีระบบ Server-Side Rendering (SSR) และ File-based routing มาให้ในตัว เหมาะสำหรับเว็บ Production ที่ต้องการประสิทธิภาพสูง
+
+คำสั่งติดตั้ง:
+
+Bash
+# รันคำสั่งนี้แล้วตอบคำถามใน Terminal เพื่อตั้งค่าโปรเจกต์
+npx create-next-app@latest
+3. ติดตั้งผ่าน Create React App - CRA (⏳ รูปแบบดั้งเดิม / ไม่แนะนำสำหรับโปรเจกต์ใหม่)
+นี่คือวิธีมาตรฐานในอดีต ปัจจุบันทาง React ไม่แนะนำ ให้ใช้สำหรับโปรเจกต์ใหม่แล้วเนื่องจากทำงานช้า แต่ยังมีประโยชน์สำหรับการเรียนรู้หรือดูแลโปรเจกต์เก่า
+
+คำสั่งติดตั้ง:
+
+Bash
+# 1. สร้างโปรเจกต์
+npx create-react-app my-app
+
+# 2. เข้าไปในโฟลเดอร์โปรเจกต์
+cd my-app
+
+# 3. รันเซิร์ฟเวอร์
+npm start
+4. ฝังลงในไฟล์ HTML โดยตรงผ่าน CDN (🌐 แบบไม่ใช้ Node.js)
+เหมาะสำหรับคนที่ต้องการลองเขียน React เล่นๆ หรือต้องการเพิ่ม React เข้าไปเป็นแค่ส่วนประกอบเล็กๆ ในเว็บไซต์ที่มีอยู่แล้ว (ไม่ต้องใช้ Node.js หรือ Build tool ใดๆ)
+
+วิธีใช้งาน:
+เพิ่ม Script tag เหล่านี้เข้าไปในส่วน <head> หรือก่อนปิด <body> ของไฟล์ .html:
+
+HTML
+<script src="[https://unpkg.com/react@18/umd/react.development.js](https://unpkg.com/react@18/umd/react.development.js)" crossorigin></script>
+<script src="[https://unpkg.com/react-dom@18/umd/react-dom.development.js](https://unpkg.com/react-dom@18/umd/react-dom.development.js)" crossorigin></script>
+
+<script src="[https://unpkg.com/babel-standalone@6/babel.min.js](https://unpkg.com/babel-standalone@6/babel.min.js)"></script>
+💡 สรุปการเลือกใช้งาน:
+
+ทำเว็บทั่วไป / เพิ่งเริ่มเรียน: เลือก Vite
+
+ทำเว็บจริงจัง / เน้น SEO: เลือก Next.js
+
+เพิ่มลูกเล่นในเว็บเก่า / ขี้เกียจลงโปรแกรม: เลือก CDN
+
+
+***
+
+**วิธีนำไปเก็บบน GitHub:**
+1. ไปที่ Repository ของคุณใน GitHub
+2. กด **Add file** > **Create new file**
+3. ตั้งชื่อไฟล์ เช่น `React-Installation-Guide.md` หรือถ้าอยากให้โชว์หน้าแรกเลยก็ตั้งว่า `README.md`
+4. Copy โค้ดในกล่องด้านบนไปวาง แล้วกด **Commit changes** ได้เลยครับ
+
+หน้าตาที่ออกมาบน GitHub จะมีการแบ่งหัวข้อสวยงาม และมีกล่อง Code ให้กด Copy ได้ง่ายๆ เวลาคุณกลับมาอ่านครับ!
